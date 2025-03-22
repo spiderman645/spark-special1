@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <title>React App</title>
+  </head>
+
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AbilitySphere Course</title>
+        <style>
+          /* General Styles */
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+          }
+
+          header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+          }
+
+          header .logo {
+            display: flex;
+            align-items: center;
+          }
+
+          header .logo img {
+            height: 50px;
+            margin-right: 10px;
+          }
+
+          nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+          }
+
+          nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+          }
+
+          section {
+            padding: 50px 20px;
+            text-align: center;
+          }
+
+          .hero {
+            background: url("images/hero-bg.jpg") no-repeat center center/cover;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          }
+
+          .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+          }
+
+          .cta-button {
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+          }
+
+          .features,
+          .curriculum,
+          .enroll {
+            background-color: white;
+          }
+
+          .feature,
+          .year {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto 20px;
+          }
+
+          .feature img {
+            height: 100px;
+            margin-bottom: 20px;
+          }
+
+          form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+          }
+
+          form label {
+            margin-bottom: 5px;
+          }
+
+          form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+
+          footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+          }
+
+          footer .social-links a {
+            color: 4B63EA ;
+            margin: 0 10px;
+            text-decoration: none;
+          }
+        </style>
+      </head>
+      <body>
+        <!-- Header -->
+        <header>
+          <div class="logo">
+            <img src="images/logo.png" alt="AbilitySphere Logo" />
+            <h1>AbilitySphere Course</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#curriculum">Curriculum</a></li>
+              <li><a href="#enroll">Enroll</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+          <h2>
+            Empowering Individuals with Down Syndrome Through Online Learning
+          </h2>
+          <p>Join our inclusive, adaptive, and engaging courses today!</p>
+          <a href="#enroll" class="cta-button">Enroll Now</a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+          <h2>Why Choose Us?</h2>
+          <div class="feature">
+            <img src="images/interactive.png" alt="Interactive Lessons" />
+            <h3>Interactive Lessons</h3>
+            <p>Engaging and hands-on activities for effective learning.</p>
+          </div>
+          <div class="feature">
+            <img src="images/accessible.png" alt="Accessible Design" />
+            <h3>Accessible Design</h3>
+            <p>Designed for all abilities and learning styles.</p>
+          </div>
+          <div class="feature">
+            <img src="images/support.png" alt="Caregiver Support" />
+            <h3>Caregiver Support</h3>
+            <p>Resources and guides to help caregivers assist learners.</p>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-course">
+          <h2>About the Course</h2>
+          <p>
+            This course is designed to empower individuals with Down syndrome by
+            teaching essential life skills, fostering creativity, and promoting
+            independence through online learning.
+          </p>
+          <div class="course-details">
+            <h3>Course Highlights</h3>
+            <ul>
+              <li>3-year program with progressive learning modules.</li>
+              <li>Interactive and accessible content.</li>
+              <li>Support for caregivers and families.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section id="curriculum" class="curriculum">
+          <h2>Curriculum Overview</h2>
+          <div class="year">
+            <h3>Year 1: Building Foundations</h3>
+            <p>
+              Focus on basic life skills, communication, and introductory
+              concepts.
+            </p>
+          </div>
+          <div class="year">
+            <h3>Year 2: Expanding Skills</h3>
+            <p>
+              Build on foundational skills and introduce more advanced concepts.
+            </p>
+          </div>
+          <div class="year">
+            <h3>Year 3: Independence and Self-Expression</h3>
+            <p>
+              Develop greater independence, self-expression, and advanced
+              skills.
+            </p>
+          </div>
+        </section>
+
+        <!-- Enrollment Section -->
+        <section id="enroll" class="enroll">
+          <h2>Enroll in the Course</h2>
+          <form id="enroll-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <button type="submit" class="cta-button">Submit</button>
+          </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <p>&copy; 2023 AbilitySphere. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+          </div>
+        </footer>
+
+        <script>
+          // Form Submission Handling
+          document
+            .getElementById("enroll-form")
+            .addEventListener("submit", function (e) {
+              e.preventDefault();
+              alert("Thank you for enrolling! We will contact you shortly.");
+            });
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
+

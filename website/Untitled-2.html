@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AbilitySphere Lecture Platform</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    header { background-color:#0096FF; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    header .logo { display: flex; align-items: center; }
+    header .logo img { height: 50px; margin-right: 10px; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 50px 20px; text-align: center; }
+    .hero { background: url('images/hero-bg.jpg') no-repeat center center/cover; color: white; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+    .hero h2 { font-size: 2.5em; margin-bottom: 20px; }
+    .cta-button { background-color: #FFC107; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    .lectures, .upload { background-color: white; }
+    .lecture { margin-bottom: 30px; }
+    .lecture video { width: 80%; max-width: 600px; height: auto; }
+    form { display: flex; flex-direction: column; width: 300px; margin: 0 auto; }
+    form label { margin-bottom: 5px; }
+    form input { margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+    footer .social-links a { color: #FFC107; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="AbilitySphere Logo">
+      <h1>AbilitySphere Lecture Platform</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#lectures">Lectures</a></li>
+        <li><a href="#upload">Upload</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <h2>Welcome to the AbilitySphere Lecture Platform</h2>
+    <p>Access engaging and interactive lectures designed for individuals with Down syndrome.</p>
+    <a href="#lectures" class="cta-button">View Lectures</a>
+  </section>
+
+  <!-- Lecture Dashboard -->
+  <section id="lectures" class="lectures">
+    <h2>Available Lectures</h2>
+    <div class="lecture">
+      <h3>Lecture 1: Introduction to Life Skills</h3>
+      <video controls>
+        <source src="videos/lecture1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="lecture">
+      <h3>Lecture 2: Communication Basics</h3>
+      <video controls>
+        <source src="videos/lecture2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Upload Section -->
+  <section id="upload" class="upload">
+    <h2>Upload a New Lecture</h2>
+    <form id="upload-form">
+      <label for="title">Lecture Title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="video">Upload Video:</label>
+      <input type="file" id="video" name="video" accept="video/mp4" required>
+      <button type="submit" class="cta-button">Upload</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 AbilitySphere. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    // Form Submission Handling
+    document.getElementById('upload-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Lecture uploaded successfully!');
+    });
+  </script>
+</body>
+</html>
